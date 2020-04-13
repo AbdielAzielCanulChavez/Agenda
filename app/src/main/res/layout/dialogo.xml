@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="#00BCD4"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="25dp"
+        android:text="Editar registro"
+        android:textStyle="bold"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/d_area"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_place"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:hint="Area"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/d_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:hint="Fecha (DD/MM/AA)"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/d_inicioHora"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_time"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:hint="Inicio Hora (HH:MM)"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:id="@+id/d_finHora"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_time"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:hint="Fin Hora (HH:MM)"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:id="@+id/d_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_phone"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:hint="Telefono"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/d_empleado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_user"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:hint="Nombre de la reservacion"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/d_actividad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_work"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:hint="Actividad a realizar"
+                android:inputType="text"
+                />
+
+
+
+            <Button
+                android:id="@+id/d_guardarBTN"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Guardar"
+                android:background="#4CAF50"
+                android:layout_margin="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+            <Button
+                android:id="@+id/d_cancelarBTN"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Cancelar"
+                android:background="#F44336"
+                android:layout_margin="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
